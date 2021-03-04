@@ -198,7 +198,6 @@ class _Controller {
     if (!state.formKey.currentState.validate()) return;
 
     state.formKey.currentState.save();
-    var newTransaction = {title, amount, category};
     Transaction.fakeDB.add(Transaction(
       title: title,
       amount: amount,
@@ -246,10 +245,6 @@ class _Controller {
     } catch (e) {
       return 'Not valid category';
     }
-  }
-
-  List getTransactions(bool editMode) {
-    // return state.userRecord.transactions.forEach((e) => Text(e.title.toString().split('.')[]));
   }
 
   double getTotal() {

@@ -57,6 +57,17 @@ class _PortfolioHomeState extends State<PortfolioHomeScreen> {
                         child: SingleChildScrollView(
                           child: Column(
                             children: [
+                              Column(
+                                children: [
+                                  Text(
+                                    "New Transaction",
+                                    style: Theme.of(context).textTheme.headline6,
+                                  )
+                                ],
+                              ),
+                              SizedBox(
+                                height: 5.0,
+                              ),
                               Row(
                                 children: [
                                   Expanded(

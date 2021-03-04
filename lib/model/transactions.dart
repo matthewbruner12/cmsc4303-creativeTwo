@@ -15,7 +15,11 @@ class Transaction {
   }
 
   static List<Transaction> fakeDB = [
-    Transaction(title: 'Doordash', amount: 40, category: true),
-    Transaction(title: 'Groceries', amount: 25, category: false),
+    Transaction(title: 'Paycheck', amount: 1000, category: true),
+    Transaction(title: 'Groceries', amount: 75, category: false),
+    Transaction(title: 'Food', amount: 15, category: false),
+    Transaction(title: 'Custom', amount: 150, category: true),
+    Transaction(title: 'Lottery', amount: 500, category: true),
+    Transaction(title: 'Bills', amount: 200, category: false),
   ];
 }

@@ -138,11 +138,11 @@ class _PortfolioHomeState extends State<PortfolioHomeScreen> {
         ),
         con.getTotal() > 0
             ? Text(
-                r"Balance $" + "$total",
+                r"Balance $" + "${total.abs()}",
                 style: TextStyle(color: Colors.green, fontSize: 40),
               )
             : Text(
-                r"Balance $" + "$total",
+                r"Balance $" + "${total.abs()}",
                 style: TextStyle(color: Colors.red, fontSize: 40),
               ),
         SizedBox(
